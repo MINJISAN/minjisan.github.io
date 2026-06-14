@@ -24,6 +24,7 @@ const thumbMap = {
   'saengil-yeojeong': 'assets/works/saengil-yeojeong/saengil-yeojeong_thumb.png',
   'seoldeurin-jam': 'assets/works/seoldeurin-jam/seoldeurin-jam_thumb.png',
   'sicha': 'assets/works/sicha/sicha_thumb.jpg',
+  'species-origin': 'assets/works/species-origin/species-origin_thumb.webp',
   'sputnik': 'assets/works/sputnik/Sputnik_thumb.png',
   'sunsetblue': 'assets/works/sunsetblue/sunsetblue_thumb.png',
   'train91': 'assets/works/train91/train91_thumb.png',
