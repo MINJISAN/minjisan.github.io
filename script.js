@@ -270,7 +270,7 @@
     "year": "2021",
     "type": "audio",
     "status": "Complete",
-    "src": "",
+    "src": "Resource/audio/crevice6.mp3",
     "description": "퍼포먼스 음향/음악 작업. 1M SPACE, 구상성단작전.",
     "role": "음향 / 음악",
     "form": "퍼포먼스",

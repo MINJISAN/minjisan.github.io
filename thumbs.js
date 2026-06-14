@@ -19,10 +19,12 @@ const thumbMap = {
   'hynpytol': 'assets/works/hynpytol/hynpytol_thumb.jpg',
   'juldari-gi': 'assets/works/juldari-gi/juldari-gi_thumb.png',
   'monsun': 'assets/works/monsun/monsun_thumb.png',
+  'oraeden': 'assets/works/oraeden/oraeden_thumb.png',
   'piruk-elapse': 'assets/works/piruk-elapse/piruk-elapse_thumb.png',
   'saengil-yeojeong': 'assets/works/saengil-yeojeong/saengil-yeojeong_thumb.png',
   'seoldeurin-jam': 'assets/works/seoldeurin-jam/seoldeurin-jam_thumb.png',
   'sicha': 'assets/works/sicha/sicha_thumb.jpg',
+  'sputnik': 'assets/works/sputnik/Sputnik_thumb.png',
   'sunsetblue': 'assets/works/sunsetblue/sunsetblue_thumb.png',
   'train91': 'assets/works/train91/train91_thumb.png',
   'useless-table': 'assets/works/useless-table/useless-table_thumb.png'
