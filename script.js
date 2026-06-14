@@ -821,7 +821,7 @@ function renderDetailMedia(work) {
   mediaIndex = 0;
 
   if (!mediaItems.length) {
-    return `<p class="empty-media">아직 연결된 미디어 파일이 없습니다. Editor에서 파일을 선택하거나 경로를 넣어주세요.</p>`;
+    return `<p class="empty-media">이미지 준비중</p>`;
   }
 
   if (mediaItems.length === 1) {
