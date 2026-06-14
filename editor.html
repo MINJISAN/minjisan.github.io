@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Min Jisan Portfolio Editor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Back to portfolio">MIN JISAN</a>
+      <nav class="nav" aria-label="Editor navigation">
+        <a href="index.html">View Site</a>
+        <a href="#editor">Editor</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro editor-intro" aria-labelledby="editor-title">
+        <div class="intro-copy">
+          <p class="eyebrow">Private Editing Surface</p>
+          <h1 id="editor-title">Portfolio Editor</h1>
+        </div>
+        <dl class="intro-meta">
+          <div>
+            <dt>Storage</dt>
+            <dd>Browser Local</dd>
+          </div>
+          <div>
+            <dt>Output</dt>
+            <dd>JSON Backup</dd>
+          </div>
+          <div>
+            <dt>Index</dt>
+            <dd><span id="work-count">0</span> Works</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="editor" id="editor">
+        <div class="section-label">
+          <span>Portfolio Editor</span>
+          <span id="editor-mode">New Work</span>
+        </div>
+        <form class="editor-form" id="work-form">
+          <input type="hidden" id="work-id" />
+          <label>
+            <span>Title</span>
+            <input id="work-title" required placeholder="작품 제목" />
+          </label>
+          <label>
+            <span>Genre</span>
+            <input id="work-genre" required placeholder="Video Art, Music, Installation..." />
+          </label>
+          <label>
+            <span>Year</span>
+            <input id="work-year" placeholder="2026" />
+          </label>
+          <label>
+            <span>Type</span>
+            <select id="work-type">
+              <option value="image">Image</option>
+              <option value="video">Video</option>
+              <option value="audio">Audio</option>
+              <option value="pdf">PDF</option>
+            </select>
+          </label>
+          <label>
+            <span>Status</span>
+            <input id="work-status" placeholder="Draft, Final, Resource..." />
+          </label>
+          <label>
+            <span>Thumbnail</span>
+            <input id="work-thumb-file" type="file" accept="image/*" />
+          </label>
+          <label class="wide">
+            <span>YouTube URL</span>
+            <input id="work-youtube" placeholder="https://youtu.be/... 또는 https://youtube.com/watch?v=..." />
+          </label>
+          <label>
+            <span>Media File(s)</span>
+            <input id="work-src-file" type="file" accept="image/*,video/*,audio/*,.pdf,application/pdf" multiple />
+          </label>
+          <label class="wide">
+            <span>Media Paths</span>
+            <textarea id="work-media-paths" rows="3" placeholder="경로를 한 줄에 하나씩&#10;Resource/images/work1.jpg&#10;Resource/videos/clip.mp4"></textarea>
+          </label>
+          <label>
+            <span>Role</span>
+            <input id="work-role" placeholder="게임 디렉터 / 음향 / 음악..." />
+          </label>
+          <label>
+            <span>Form</span>
+            <input id="work-form-field" placeholder="게임, 연극, 무용, 미디어아트..." />
+          </label>
+          <label>
+            <span>Venue</span>
+            <input id="work-venue" placeholder="공연장 · 단체" />
+          </label>
+          <label>
+            <span>Date</span>
+            <input id="work-date" placeholder="2025 또는 2019 — 2020" />
+          </label>
+          <label class="wide">
+            <span>Note</span>
+            <input id="work-note" placeholder="수상, 페스티벌 참가 등" />
+          </label>
+          <label class="wide">
+            <span>Credits</span>
+            <textarea id="work-credits" rows="3" placeholder="Director 민지산 · Sound 민지산..."></textarea>
+          </label>
+          <label class="wide">
+            <span>Description</span>
+            <textarea id="work-description" rows="4" placeholder="상세 설명"></textarea>
+          </label>
+          <div class="editor-actions wide">
+            <button type="submit">Save</button>
+            <button type="button" id="new-work">New</button>
+            <button type="button" id="delete-work">Delete</button>
+            <button type="button" id="export-data">Export JSON</button>
+            <label class="import-button">
+              Import JSON
+              <input id="import-data" type="file" accept="application/json,.json" />
+            </label>
+            <button type="button" id="reset-data">Reset</button>
+          </div>
+        </form>
+        <div class="editor-list" id="editor-list" aria-label="Editable works"></div>
+      </section>
+
+      <section class="controls" aria-label="Work filters">
+        <div class="search-wrap">
+          <span aria-hidden="true">Search</span>
+          <input id="search" type="search" placeholder="title, genre, year" autocomplete="off" />
+        </div>
+        <div class="filter-group" id="filters" aria-label="Filter by genre"></div>
+      </section>
+
+      <section class="work-shell" id="works">
+        <div class="section-label">
+          <span>Preview</span>
+          <span id="result-count">0</span>
+        </div>
+        <div class="work-grid" id="work-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <dialog class="detail-dialog" id="detail-dialog" aria-labelledby="detail-title">
+      <div class="detail-panel">
+        <button class="icon-button close-button" id="close-detail" type="button" aria-label="Close detail">
+          ×
+        </button>
+        <div class="detail-media" id="detail-media"></div>
+        <aside class="detail-info">
+          <p class="eyebrow" id="detail-genre"></p>
+          <h2 id="detail-title"></h2>
+          <dl id="detail-meta"></dl>
+          <p id="detail-description"></p>
+          <p class="detail-credits" id="detail-credits"></p>
+          <button class="resource-link detail-edit" id="detail-edit" type="button">Edit Work</button>
+        </aside>
+      </div>
+    </dialog>
+
+    <script src="thumbs.js"></script>
+    <script src="script.js?v=20260510-private-editor"></script>
+  </body>
+</html>
