@@ -891,15 +891,14 @@ code {
 
 @media (max-width: 720px) {
   .career-row {
-    grid-template-columns: 36px 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: auto auto;
   }
 
   .cy {
-    grid-row: 1;
+    grid-row: 1 / -1;
     grid-column: 1;
-    padding-bottom: 0;
-    border-right: 0;
+    align-self: stretch;
   }
 
   .ct {
