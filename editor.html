@@ -80,8 +80,19 @@
             <input id="work-thumb-file" type="file" accept="image/*" />
           </label>
           <label class="wide">
-            <span>YouTube URL</span>
+            <span>YouTube URL 1</span>
             <input id="work-youtube" placeholder="https://youtu.be/... 또는 https://youtube.com/watch?v=..." />
+          </label>
+          <label class="wide">
+            <span>YouTube URL 2</span>
+            <input id="work-youtube2" placeholder="https://youtu.be/..." />
+          </label>
+          <label class="wide yt-thumb-mode-label" id="yt-thumb-mode-label">
+            <span>YouTube 썸네일</span>
+            <div class="radio-group">
+              <label class="radio-option"><input type="radio" name="yt-thumb-mode" id="yt-thumb-auto" value="auto" checked /><span>YouTube 자동</span></label>
+              <label class="radio-option"><input type="radio" name="yt-thumb-mode" id="yt-thumb-custom" value="custom" /><span>커스텀 썸네일</span></label>
+            </div>
           </label>
           <label>
             <span>Media File(s)</span>
@@ -174,6 +185,6 @@
     </dialog>
 
     <script src="thumbs.js"></script>
-    <script src="script.js?v=20260621-thumb-live"></script>
+    <script src="script.js?v=20260623-yt2"></script>
   </body>
 </html>

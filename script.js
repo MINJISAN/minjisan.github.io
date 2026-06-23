@@ -6,17 +6,44 @@ const defaultWorks = [
     "year": "2026",
     "type": "image",
     "status": "Complete",
-    "src": "",
+    "src": "assets/works/bathysphere/BTSP_Scr_1.png",
     "description": "1940년대 디젤펑크 세계관과 버뮤다 심해 탐사를 소재로 한 호러 전략 어드벤처 게임. 플레이어는 실종된 언니를 찾기 위해 잠수구 바티스피어에 탑승하고, 정체불명의 적들과 반복되는 전투와 타임루프를 겪게 된다.",
     "role": "디렉터",
     "form": "게임",
     "venue": "2025 PlayX4 · 2025 BIC Festival · 2025 Beaver Rocks · 2026 TIGS",
     "date": "2025 —",
     "note": "2026 TIGS Brain Spark Nominated",
-    "credits": "Director minjisan · Game Design minjisan·elsaABBA · Programmer Cho WoongOh·Shim Kyubeom · Art Baehatrice · Sound issyun",
+    "credits": "Director minjisan · Game Design: minjisan·elsaABBA · Programmer Cho WoongOh·Shim Kyubeom · Art Baehatrice · Sound issyun",
     "youtube": "https://youtu.be/XC0J9myfhRk?si=wfvOqEWuEUeyHjBZ",
-    "thumb": "",
-    "by": "base0"
+    "thumb": "assets/works/bathysphere/BTSP_Scr_1.png",
+    "by": "base0",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/works/bathysphere/BTSP_Scr_1.png"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/bathysphere/BTSP_Scr_2.png"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/bathysphere/BTSP_Scr_6.png"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/bathysphere/BTSP_Scr_8.png"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/bathysphere/BTSP_Scr_9.png"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/bathysphere/BTSP_Scr_10.png"
+      }
+    ],
+    "ytThumbCustom": false
   },
   {
     "id": "suldambal",
@@ -119,8 +146,8 @@ const defaultWorks = [
     "year": "2023",
     "type": "image",
     "status": "Complete",
-    "thumb": "assets/works/hynpytol-thumb.png",
-    "src": "assets/works/hynpytol-thumb.png",
+    "thumb": "assets/works/hynpytol/HYNPYTOL_Switch_Screenshot_KOR_4_2.jpg",
+    "src": "assets/works/hynpytol/HYNPYTOL_Switch_Screenshot_0_2.jpeg",
     "link": "Resource/pdf/hynpytol.pdf",
     "description": "흰피톨은 인체 면역계를 배경으로 한 퍼즐 어드벤처 게임이다. 플레이어는 선택받은 킬러 T세포가 되어 무너져가는 면역계를 탐험하며 병원체의 위협으로부터 세계를 구하기 위한 여정을 떠난다.\n\n게임의 핵심은 단 하나의 행동인 ‘하이파이브’에 있다. 이동, 대화, 상호작용, 퍼즐 해결, 감염 세포 처리까지 모든 행동이 손을 이용한 하나의 메커니즘으로 연결되며, 이를 통해 단순한 조작 안에서 깊이 있는 퍼즐과 탐험을 구현한다.\n\n90년대 게임보이 컬러 시대의 픽셀 그래픽과 사운드에서 영감을 받은 HYNPYTOL은 고전 게임의 감성을 현대적으로 재해석한 독창적인 아트 스타일을 선보인다. 또한 면역계의 다양한 세포와 생물학적 개념을 세계관과 게임플레이에 녹여내어, 플레이어가 자연스럽게 면역 시스템의 원리를 탐험하고 이해할 수 있도록 구성하였다.",
     "role": "게임 디렉터",
@@ -128,15 +155,32 @@ const defaultWorks = [
     "venue": "2023 BIC · 2023 Burning Beaver · 2024 G-STAR",
     "date": "2023.09.22",
     "note": "2023 BIC Festival Excellence in Game Design · 2023 Burning Beaver 크리에이터 픽 · 2023 GIGDC 대학부 은상 · 2023 Indieplus Awards 대상 · 2024 이달의 우수게임",
-    "credits": "Director minjisan · Game Design minjisan·elsaABBA · Programmer Cho WoongOh·Min Woobin · Art BitBits · Sound issyun · PM Nam Hyunuk · Scenario minjisan·ElsaABBA · English Localization issyun · Japanese Localization Masa Kei · Chinese Localization Zheng Sheng · German Localization Iwan Gabovitch",
+    "credits": "Director minjisan · Game Design: minjisan·elsaABBA · Programmer Cho WoongOh·Min Woobin · Art BitBits · Sound issyun · PM Nam Hyunuk · Scenario minjisan·ElsaABBA · English Localization: issyun · Japanese Localization: Masa Kei · Chinese Localization: Zheng Sheng · German Localization: Iwan Gabovitch",
     "youtube": "https://youtu.be/0Rb0MLkgT4E",
     "by": "base0",
     "media": [
       {
         "type": "image",
-        "src": "assets/works/hynpytol-thumb.png"
+        "src": "assets/works/hynpytol/HYNPYTOL_Switch_Screenshot_0_2.jpeg"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/hynpytol/HYNPYTOL_Switch_Screenshot_1_NEW_KOR.jpeg"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/hynpytol/HYNPYTOL_Switch_Screenshot_2_3.jpeg"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/hynpytol/HYNPYTOL_Switch_Screenshot_3_2.jpeg"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/hynpytol/HYNPYTOL_Switch_Screenshot_5_2.jpeg"
       }
-    ]
+    ],
+    "ytThumbCustom": true
   },
   {
     "id": "gabriel",
@@ -145,7 +189,7 @@ const defaultWorks = [
     "year": "2023",
     "type": "image",
     "status": "Complete",
-    "thumb": "assets/works/gabriel/아카이브1.PNG",
+    "thumb": "assets/works/gabriel/gabriel_thumb.png",
     "src": "assets/works/gabriel/아카이브1.PNG",
     "link": "Resource/pdf/gabriel.pdf",
     "description": "가브리엘의 나팔은 부피는 유한하지만 표면적이 무한한 기하학적 도형이다. 우린 절대로 답을 낼 수 없는 현상에 대한 이유에 대해 어떤 식으로든 설명하고 싶어한다. 그래서 여러 현상을 엮어 의미를 부여하고 이야기를 창조한다. 유한한 사물에서 무한히 뻗어나가는 이야기. 그것은 때로는 괴담이 되고, 때로는 재미없는 농담이 된다. 당신은 이제 끊임없이 얽힌 그들을 마주한다.",
@@ -154,7 +198,7 @@ const defaultWorks = [
     "venue": "2023 Art & Technology Conference",
     "date": "2023.11.24 - 28",
     "note": "",
-    "credits": "Director 강소연·민지산·배하영·조예진 · Writer 배하영·민지산 · 3D Artist 배하영 · Sound Designer 민지산 · Programmer 강소연·조예진",
+    "credits": "Director 강소연·민지산·배하영·조예진 · Writer 배하영·민지산 · 3D Artist: 배하영 · Sound Designer: 민지산 · Programmer 강소연·조예진",
     "youtube": "https://youtu.be/9VhOb6zZRow",
     "media": [
       {
@@ -172,29 +216,10 @@ const defaultWorks = [
       {
         "type": "image",
         "src": "assets/works/gabriel/아카이브4.png"
-      },
-      {
-        "type": "image",
-        "src": "assets/works/gabriel/아카이브1.PNG"
-      },
-      {
-        "type": "image",
-        "src": "assets/works/gabriel/아카이브2.PNG"
-      },
-      {
-        "type": "image",
-        "src": "assets/works/gabriel/아카이브3.PNG"
-      },
-      {
-        "type": "image",
-        "src": "assets/works/gabriel/아카이브4.png"
-      },
-      {
-        "type": "image",
-        "src": "assets/works/gabriel-thumb.png"
       }
     ],
-    "by": "PCM (Pulse-Code Modulators)"
+    "by": "PCM (Pulse-Code Modulators)",
+    "ytThumbCustom": false
   },
   {
     "id": "ibyeol",
@@ -228,7 +253,7 @@ const defaultWorks = [
     "year": "2022",
     "type": "image",
     "status": "Complete",
-    "thumb": "assets/works/cr3ature/2.png",
+    "thumb": "assets/works/cr3ature/15.png",
     "src": "assets/works/cr3ature/2.png",
     "description": "CR3ATURE는 인간과 인공지능의 경계에 대한 질문에서 출발한 VR 기반 영화 작품이다. 작품은 기술의 발전과 함께 인간이 만들어낸 새로운 지성체가 인간다움을 어떻게 모방하고 이해하는지 탐구하며, 과연 무엇이 인간을 인간답게 만드는지 되묻는다.\n\n언택트 사회가 일상이 된 미래를 배경으로, 작품은 인간과 인공지능을 구분하는 기준이 무엇인지 질문한다. 감각하고, 사고하고, 말하는 능력만으로 인간성을 정의할 수 있는가? 만약 호기심과 진리를 추구하려는 의지가 인간의 본질이라면, 그러한 의지가 없는 인간은 여전히 인간이라 할 수 있는가?\n\nVR 플랫폼을 무대로 펼쳐지는 CR3ATURE는 인간과 인공지능, 현실과 가상, 육체와 의식 사이의 모호한 경계를 드러낸다. 이를 통해 기술과 함께 변화하는 인간 존재의 의미와, 인간다움에 대한 다양한 관점을 제시한다.",
     "role": "연출 / 영상 / 음향 / 배우",
@@ -246,6 +271,10 @@ const defaultWorks = [
       },
       {
         "type": "image",
+        "src": "assets/works/cr3ature/sky.png"
+      },
+      {
+        "type": "image",
         "src": "assets/works/cr3ature/3.png"
       },
       {
@@ -255,16 +284,9 @@ const defaultWorks = [
       {
         "type": "image",
         "src": "assets/works/cr3ature/12.png"
-      },
-      {
-        "type": "image",
-        "src": "assets/works/cr3ature/15.png"
-      },
-      {
-        "type": "image",
-        "src": "assets/works/cr3ature/sky.png"
       }
-    ]
+    ],
+    "ytThumbCustom": false
   },
   {
     "id": "sputnik",
@@ -539,8 +561,8 @@ const defaultWorks = [
     "year": "2020",
     "type": "image",
     "status": "Complete",
-    "thumb": "assets/works/byeolmuri-thumb.png",
-    "src": "assets/works/byeolmuri-thumb.png",
+    "thumb": "assets/works/byeolmuri/_DSC1711.jpg",
+    "src": "assets/works/byeolmuri/_DSC1711.jpg",
     "link": "Resource/pdf/byeolmuri.pdf",
     "description": "별무리는 서로 다른 세계를 살아가는 두 사람이 만나며 만들어내는 무수한 가능성과 관계의 궤적을 그린 작품이다.\n\n천체물리학자 마리안과 양봉업자 롤란드는 세상을 바라보는 방식이 완전히 다르다. 한 사람은 의미 없음 속에서 의미를 찾고, 다른 한 사람은 의미가 있기 때문에 그것이 무의미하다고 말한다. 작품은 이들이 만나고, 대화하고, 이해하고, 충돌하는 순간들을 따라가며 매 순간 갈라지는 수많은 가능성의 우주를 관측한다.\n\n연극은 플로어에 도면을 맵핑하여 두 사람의 무수한 평행우주를 표현한다. 관객은 공존하는 여러 갈래의 시간과 관계를 따라가며, 마리안과 롤란드의 우주를 체험한다.",
     "role": "공동연출 / 음향 / 음악 / 영상",
@@ -554,7 +576,23 @@ const defaultWorks = [
     "media": [
       {
         "type": "image",
-        "src": "assets/works/byeolmuri-thumb.png"
+        "src": "assets/works/byeolmuri/_DSC1711.jpg"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/byeolmuri/S8-2.png"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/byeolmuri/S9.jpg"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/byeolmuri/도면 통합.png"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/byeolmuri/별무리 엽서 점버전 시안 1.png"
       }
     ]
   },
@@ -702,7 +740,7 @@ const defaultWorks = [
     "type": "image",
     "status": "Complete",
     "thumb": "assets/works/10-4-3-2-1/1.png",
-    "src": "assets/works/10-4-3-2-1/1.png",
+    "src": "assets/works/10-4-3-2-1/4.png",
     "link": "Resource/pdf/10-4-3-2-1.pdf",
     "description": "붕괴와 재건은 건물에만 적용되지 않는다. 우리가 딛고 사는 땅부터 그 위에 쌓아올린 일상에도 붕괴와 재건은 끊임없이 일어난다. 10 : 4 3 2 1은 이러한 사건 일반에 대한 탐구를 20명의 퍼포머를 통해 진행한다.\n\n10 : 4 3 2 1은 ’일상 - 붕괴 - 그 이후‘의 페이즈로 구성되며, 힘의 작용 방향과 관계성의 변화 양상 자체를 표현함으로써 붕괴와 재건이 갖는 동사적 본질을 탐구한다.\n\n유진상가를 공연 장소로 예정하고 구성된 퍼포먼스였으나, 장소의 이슈로 인해 본 공연은 서강대에서 진행되었다. 이에 따라 유진상가에서 촬영한 영상을 인트로로 시작해, 상가를 추상화하여 표현한 프로젝션과 함께 퍼포먼스가 진행되었다. 유진상가라는 공간성에서 출발한 이 작업은 프로젝션 맵핑을 통해 장소성을 초월한 일반성을 획득한다.",
     "role": "공동연출 / 음악 / 영상",
@@ -712,10 +750,6 @@ const defaultWorks = [
     "note": "2019 유진상상 프로젝트 영상설치 참가",
     "credits": "Director 민지산·박세원·신유진·이시훈 · Movement Director 민지산·박세원·신유진·이시훈 · Sound Designer 민지산 · Cinematographer 민지산·박세원 · Video Designer 민지산·박세원 · Performer 김가현·김다영·김재영·김하늘·김현지·박찬우·배하영·서상교·시현수·신범균·이수현·이은석·이하늘·이화승·장혜수·조세희·허솔·황지현",
     "media": [
-      {
-        "type": "image",
-        "src": "assets/works/10-4-3-2-1/1.png"
-      },
       {
         "type": "image",
         "src": "assets/works/10-4-3-2-1/4.png"
@@ -737,8 +771,10 @@ const defaultWorks = [
         "src": "assets/works/10-4-3-2-1/20.png"
       }
     ],
-    "youtube": "https://youtu.be/GpNwfUwIxbM",
-    "by": "ㅁㅂㅅㅇ"
+    "youtube": "https://youtu.be/q9v-SqU_cgY",
+    "by": "ㅁㅂㅅㅇ",
+    "ytThumbCustom": true,
+    "youtube2": "https://youtu.be/GpNwfUwIxbM"
   },
   {
     "id": "piruk-elapse",
@@ -772,8 +808,8 @@ const defaultWorks = [
     "year": "2018",
     "type": "image",
     "status": "Complete",
-    "thumb": "assets/works/hapgyeok-thumb.png",
-    "src": "",
+    "thumb": "assets/works/hapgyeok/합격을기원합니다썸넬가안.png",
+    "src": "assets/works/hapgyeok/합격을기원합니다썸넬가안.png",
     "description": "관객은 신촌역에서부터 출발해 극을 따라 연세로를 함께 걷는다. 모두가 블루투스 헤드폰을 착용하며, 배우를 따라서 헤드폰을 쓰거나 벗는다. 면접을 준비하는 가현이 속으로 되뇌이는 이야기들이 헤드폰을 통해 재생된다. 가현이 수험표를 잃어버려 관객을 붙잡고 본 사람을 찾는 사건이나, 길거리 화장품 가게에서 알바를 하던 세원과 우연히 마주치는 등, <합격을기원합니다>는 신촌 연세로라는 공간성을 적극적으로 이용하여 관객과 연극의 층위를 허물고 현실로 무대를 가져온다.",
     "role": "아트디렉터 / 음향 / 음악",
     "form": "거리극",
@@ -782,7 +818,25 @@ const defaultWorks = [
     "note": "",
     "credits": "Actor 김가현·박세원 · Writer 김가현 · Art Director 민지산·박세원 · Art Business Manager 남현욱 · Sound Designer 민지산 · Photographer 이시훈 · Design 김태현·민지산·최재원",
     "youtube": "https://youtu.be/IE1I2m8uFX4",
-    "by": "사단법인 학교밖청소년학교"
+    "by": "사단법인 학교밖청소년학교",
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/works/hapgyeok/합격을기원합니다썸넬가안.png"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/hapgyeok/DSC08277.JPG"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/hapgyeok/사단법인학교밖청소년학교_합격을기원합니다 (13).jpg"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/hapgyeok/합격을기원합니다포스터이미지.png"
+      }
+    ]
   },
   {
     "id": "0-94376",
@@ -791,8 +845,8 @@ const defaultWorks = [
     "year": "2017",
     "type": "image",
     "status": "Complete",
-    "thumb": "assets/works/0-94376-thumb.png",
-    "src": "assets/works/0-94376-thumb.png",
+    "thumb": "assets/works/0-94376/2.png",
+    "src": "assets/works/0-94376/KakaoTalk_20171120_102902388.jpg",
     "link": "Resource/pdf/0-94376.pdf",
     "description": "기획\n언어는 기표와 기의의 결합으로 탄생하는 기호이다. 하지만 우리는 언어 그 자체가 의미라고 생각한다. 그렇기에 단순한 언어의 교환 자체를 의미의 공유, 즉 소통이라고 여긴다. 이는 우리가 ‘우리가 갖는 언어에 대한 맹신’에서 빠져나오지 못하고 있는 것은 아닌지 의문을 불러 일으킨다.\n\n부조리극은 여타의 실존주의 연극과 다르게 부조리한 현실을 있는 그대로의 부조리한 방식으로 보여 준다. <0 94376 91475 7>은 이러한 방향성을 그대로 유지한다. 다만, 전달하는 매체의 변주를 통해 다른 효과적인 방식을 탐구해보고자 한다. \n\n이 시도는 크게 두 갈 래로 나눌 수 있다. 하나는 라이브 공연에서의 한계를 뛰어넘을 수 있는 영상적 시도이며, 또 하나는 프로젝션을 활용해 관객이 작품의 일부(행위자)가 되는 공간적 시도이다.\n\n관람 방식\n무대에는 마주 본 두 개의 의자만 놓여 있고, 오직 관객 두 명만이 작품을 관람할 수 있다. 언어와 기호로 점철된 넓은 공간에서 소통할 수 있는 대상은 오직 서로뿐이다.\n\n정면 스크린을 향한 자리에 놓인 관객은, 눈앞의 관객보다는 영상에 시선을 집중한다.\n\n하지만 정면 스크린을 등지고 앉아있는 관객이 볼 수 있는 것은 눈앞의 또 다른 관객뿐이다.\n\n두 관객은 명령에 맞춰 자리를 맞바꾸어가며 같은 시간, 같은 공간에서 같은 작품을 감상하지만, 이들이 관람한 것은 같을 수 없다. 일상의 대화에서 우린 서로 같은 언어로 의미를 교환하고 있다고 여기지만 그럼에도 각자가 받아들이는 의미가 상이한 것과 같다.",
     "role": "기획 / 영상",
@@ -805,7 +859,15 @@ const defaultWorks = [
     "media": [
       {
         "type": "image",
-        "src": "assets/works/0-94376-thumb.png"
+        "src": "assets/works/0-94376/KakaoTalk_20171120_102902388.jpg"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/0-94376/2.png"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/0-94376/KakaoTalk_20260621_132528439_03.jpg"
       }
     ],
     "by": "민지산박세원"
@@ -936,6 +998,9 @@ const fields = {
   note: document.querySelector('#work-note'),
   credits: document.querySelector('#work-credits'),
   youtube: document.querySelector('#work-youtube'),
+  youtube2: document.querySelector('#work-youtube2'),
+  ytThumbAuto: document.querySelector('#yt-thumb-auto'),
+  ytThumbCustom: document.querySelector('#yt-thumb-custom'),
   thumbFile: document.querySelector('#work-thumb-file'),
   srcFile: document.querySelector('#work-src-file'),
   mediaPathsArea: document.querySelector('#work-media-paths'),
@@ -1079,7 +1144,7 @@ function openWork(id) {
     .join('');
 
   if (detailCredits) {
-    detailCredits.innerHTML = escapeHtml(work.credits || '').replace(/ · /g, '<br>');
+    detailCredits.innerHTML = formatCredits(work.credits);
     detailCredits.hidden = !work.credits;
   }
 
@@ -1116,7 +1181,9 @@ function mimeToMediaType(mime) {
 function buildMediaItems(work) {
   const items = [];
   const ytId = extractYouTubeId(work.youtube || '');
-  if (ytId) items.push({ type: 'youtube', src: ytId, localThumb: getThumb(work) || work.src || '' });
+  if (ytId) items.push({ type: 'youtube', src: ytId, localThumb: getThumb(work) || work.src || '', useCustomThumb: !!work.ytThumbCustom });
+  const ytId2 = extractYouTubeId(work.youtube2 || '');
+  if (ytId2) items.push({ type: 'youtube', src: ytId2, localThumb: '', useCustomThumb: false });
   if (Array.isArray(work.media) && work.media.length) {
     items.push(...work.media.filter((m) => m.src));
   } else {
@@ -1128,12 +1195,13 @@ function buildMediaItems(work) {
 
 function renderMediaItem(item, title) {
   if (item.type === 'youtube') {
-    const thumb = `https://img.youtube.com/vi/${escapeHtml(item.src)}/maxresdefault.jpg`;
-    const hqFallback = `https://img.youtube.com/vi/${escapeHtml(item.src)}/hqdefault.jpg`;
-    const localFallback = item.localThumb ? escapeHtml(item.localThumb) : '';
-    const finalFallback = localFallback || hqFallback;
+    const ytMax = `https://img.youtube.com/vi/${escapeHtml(item.src)}/maxresdefault.jpg`;
+    const ytHq = `https://img.youtube.com/vi/${escapeHtml(item.src)}/hqdefault.jpg`;
+    const local = item.localThumb ? escapeHtml(item.localThumb) : '';
     const href = `https://youtu.be/${escapeHtml(item.src)}`;
-    return `<a class="yt-thumb" href="${href}" target="_blank" rel="noreferrer" aria-label="Watch on YouTube"><img src="${thumb}" onerror="this.onerror=null;this.src='${finalFallback}'" alt="${escapeHtml(title)}" /><span class="yt-play" aria-hidden="true">&#9654;</span></a>`;
+    const imgSrc = (item.useCustomThumb && local) ? local : ytMax;
+    const onerror = (item.useCustomThumb && local) ? '' : `onerror="this.onerror=null;this.src='${local || ytHq}'"`;
+    return `<a class="yt-thumb" href="${href}" target="_blank" rel="noreferrer" aria-label="Watch on YouTube"><img src="${imgSrc}" ${onerror} alt="${escapeHtml(title)}" /><span class="yt-play" aria-hidden="true">&#9654;</span></a>`;
   }
   if (item.type === 'pdf') {
     return `<iframe src="${escapeHtml(item.src)}" title="${escapeHtml(title)} PDF preview"></iframe>`;
@@ -1217,6 +1285,15 @@ function fillForm(work) {
   fields.note.value = item.note || '';
   fields.credits.value = item.credits || '';
   fields.youtube.value = item.youtube || '';
+  fields.youtube2.value = item.youtube2 || '';
+  const ytModeLabel = document.querySelector('#yt-thumb-mode-label');
+  if (ytModeLabel) {
+    const hasYt = !!extractYouTubeId(item.youtube || '');
+    ytModeLabel.classList.toggle('visible', hasYt);
+    const useCustom = !!item.ytThumbCustom;
+    if (fields.ytThumbAuto) fields.ytThumbAuto.checked = !useCustom;
+    if (fields.ytThumbCustom) fields.ytThumbCustom.checked = useCustom;
+  }
   const pathItems = Array.isArray(item.media)
     ? item.media.filter((m) => m.src && !m.src.startsWith('data:')).map((m) => m.src)
     : item.src && !item.src.startsWith('data:') ? [item.src] : [];
@@ -1283,6 +1360,8 @@ async function getFormWork() {
     note: fields.note.value.trim(),
     credits: fields.credits.value.trim(),
     youtube: fields.youtube.value.trim(),
+    youtube2: fields.youtube2.value.trim(),
+    ytThumbCustom: fields.ytThumbCustom?.checked || false,
     thumb: thumbSrc || existing?.thumb || '',
     src,
     media: mediaArr.length ? mediaArr : undefined,
@@ -1390,6 +1469,17 @@ function escapeHtml(value) {
     .replaceAll("'", '&#039;');
 }
 
+function formatCredits(str) {
+  return (str || '').split(' · ').map(entry => {
+    const hasColon = entry.includes(': ');
+    const sep = hasColon ? entry.indexOf(': ') : entry.indexOf(' ');
+    if (sep === -1) return escapeHtml(entry);
+    const role = entry.slice(0, sep);
+    const names = entry.slice(sep + (hasColon ? 2 : 1));
+    return `<em>${escapeHtml(role)}</em> ${escapeHtml(names)}`;
+  }).join('<br>');
+}
+
 filters.addEventListener('click', (event) => {
   const button = event.target.closest('button[data-genre]');
   if (!button) return;
@@ -1411,6 +1501,11 @@ if (isEditorPage) {
   });
 
   form.addEventListener('submit', saveForm);
+
+  fields.youtube?.addEventListener('input', () => {
+    const ytModeLabel = document.querySelector('#yt-thumb-mode-label');
+    if (ytModeLabel) ytModeLabel.classList.toggle('visible', !!extractYouTubeId(fields.youtube.value));
+  });
 
   document.querySelectorAll('label[data-toggleable] .field-toggle').forEach((btn) => {
     btn.addEventListener('click', () => {

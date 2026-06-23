@@ -295,6 +295,36 @@ label[data-toggleable].field-off input {
   grid-column: span 5;
 }
 
+.radio-group {
+  display: flex;
+  gap: 16px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.radio-option input[type='radio'] {
+  width: auto;
+  border: none;
+  padding: 0;
+  margin: 0;
+  accent-color: var(--fg);
+}
+
+.yt-thumb-mode-label {
+  display: none;
+}
+
+.yt-thumb-mode-label.visible {
+  display: grid;
+}
+
 .editor-actions {
   display: flex;
   flex-wrap: wrap;
@@ -760,6 +790,11 @@ code {
 
 #detail-description {
   white-space: pre-line;
+}
+
+.detail-credits em {
+  font-style: italic;
+  opacity: 0.55;
 }
 
 .detail-credits {
