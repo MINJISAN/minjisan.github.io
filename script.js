@@ -1,6 +1,22 @@
 const defaultCareer = [
   {
     "section": "Theatre & Film",
+    "year": "2026",
+    "title": "HOME",
+    "medium": "연극",
+    "role": "기술지원 / 음향 / 음악",
+    "venue": "연희예술극장 · 이가윤"
+  },
+  {
+    "section": "Theatre & Film",
+    "year": "2026",
+    "title": "키키의 경계성 인격장애",
+    "medium": "뮤지컬",
+    "role": "기술지원",
+    "venue": " · 공연제작소 작작"
+  },
+  {
+    "section": "Theatre & Film",
     "year": "2018",
     "title": "타오르는 어둠 속에서",
     "medium": "연극",
@@ -559,6 +575,33 @@ const defaultWorks = [
       }
     ],
     "ytThumbCustom": false
+  },
+  {
+    "id": "home",
+    "title": "Home",
+    "genre": "Sound",
+    "year": "2026",
+    "type": "audio",
+    "status": "Complete",
+    "src": "assets/works/home/final_walk_0717.mp3",
+    "thumb": "assets/works/home/poster.png",
+    "description": "",
+    "role": "기술지원 / 음향 / 음악",
+    "form": "연극",
+    "venue": "연희예술극장",
+    "by": "이가윤",
+    "date": "2026.07.16 -19",
+    "credits": "구성/배우: 이가윤 · 드라마터그: 우주현 · 시노그라피/영상: 이화승 · 음향/음악: 민지산 · 기획/디자인: 이정근 · 사진: 이준태 · 주최 및 주관: 이가윤",
+    "media": [
+      {
+        "type": "audio",
+        "src": "assets/works/home/final_walk_0717.mp3"
+      },
+      {
+        "type": "image",
+        "src": "assets/works/home/poster.png"
+      }
+    ]
   },
   {
     "id": "suldambal",
