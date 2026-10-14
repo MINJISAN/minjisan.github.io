@@ -121,6 +121,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 
 if __name__ == '__main__':
-    with http.server.HTTPServer(('', PORT), Handler) as httpd:
+    with http.server.ThreadingHTTPServer(('', PORT), Handler) as httpd:
         print(f'Dev server → http://localhost:{PORT}')
         httpd.serve_forever()

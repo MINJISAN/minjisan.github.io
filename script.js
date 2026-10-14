@@ -1748,7 +1748,7 @@ function renderEditorList() {
     .join('');
 }
 
-function openWork(id) {
+function openWork(id, push = true) {
   const work = works.find((item) => item.id === id);
   if (!work) return;
 
@@ -1779,12 +1779,10 @@ function openWork(id) {
   }
 
   detailMedia.innerHTML = renderDetailMedia(work);
-  dialog.showModal();
-  constrainStageImage();
+  if (push) history.pushState({ work: work.id }, '', `#work/${work.id}`);
+  if (!dialog.open) dialog.showModal();
+  dialog.scrollTop = 0;
 }
-
-let mediaItems = [];
-let mediaIndex = 0;
 
 function extractYouTubeId(url) {
   if (!url) return '';
@@ -1842,53 +1840,15 @@ function renderMediaItem(item, title) {
   if (item.type === 'audio') {
     return `<div class="audio-stage"><audio src="${escapeHtml(item.src)}" controls></audio></div>`;
   }
-  return `<img src="${escapeHtml(item.src)}" alt="${escapeHtml(title)}" />`;
-}
-
-
-function constrainStageImage() {
-  const stage = detailMedia.querySelector('.carousel-stage');
-  if (!stage) return;
-  const img = stage.querySelector(':scope > img');
-  if (img && stage.clientHeight > 0) {
-    img.style.maxHeight = stage.clientHeight + 'px';
-    img.style.maxWidth = stage.clientWidth + 'px';
-    img.style.width = 'auto';
-    img.style.height = 'auto';
-  }
-}
-
-function updateCarousel() {
-  const stage = detailMedia.querySelector('.carousel-stage');
-  const counter = detailMedia.querySelector('.carousel-counter');
-  if (!stage) return;
-  stage.innerHTML = renderMediaItem(mediaItems[mediaIndex], detailTitle.textContent);
-  constrainStageImage();
-  if (counter) counter.textContent = `${mediaIndex + 1} / ${mediaItems.length}`;
+  return `<img src="${escapeHtml(item.src)}" alt="${escapeHtml(title)}" loading="lazy" />`;
 }
 
 function renderDetailMedia(work) {
-  mediaItems = buildMediaItems(work);
-  mediaIndex = 0;
-
-  if (!mediaItems.length) {
+  const items = buildMediaItems(work);
+  if (!items.length) {
     return `<p class="empty-media">이미지 준비중</p>`;
   }
-
-  if (mediaItems.length === 1) {
-    return renderMediaItem(mediaItems[0], work.title);
-  }
-
-  return `
-    <div class="media-carousel">
-      <div class="carousel-stage">${renderMediaItem(mediaItems[0], work.title)}</div>
-      <div class="carousel-nav">
-        <button class="carousel-btn" type="button" data-dir="-1" aria-label="이전">&#8249;</button>
-        <span class="carousel-counter">1 / ${mediaItems.length}</span>
-        <button class="carousel-btn" type="button" data-dir="1" aria-label="다음">&#8250;</button>
-      </div>
-    </div>
-  `;
+  return items.map((item) => `<div class="media-item">${renderMediaItem(item, work.title)}</div>`).join('');
 }
 
 function fillForm(work) {
@@ -2294,24 +2254,36 @@ if (isEditorPage) {
     renderEditorCareerList();
   }
 }
-detailMedia.addEventListener('click', (event) => {
-  const btn = event.target.closest('.carousel-btn[data-dir]');
-  if (!btn) return;
-  const dir = Number(btn.dataset.dir);
-  mediaIndex = (mediaIndex + dir + mediaItems.length) % mediaItems.length;
-  updateCarousel();
-});
-
+// 상세 페이지는 #work/<id> 해시를 가지므로 뒤로가기로 닫히고, 링크로 바로 열 수 있다
 function closeDialog() {
-  const audio = detailMedia.querySelector('audio');
-  if (audio) { audio.pause(); audio.currentTime = 0; }
-  dialog.close();
+  if (history.state?.work) {
+    history.back();
+  } else {
+    dialog.close();
+    if (location.hash.startsWith('#work/')) history.replaceState(null, '', location.pathname + location.search);
+  }
+}
+
+function workIdFromHash() {
+  return location.hash.startsWith('#work/') ? decodeURIComponent(location.hash.slice(6)) : '';
 }
 
 closeDetail.addEventListener('click', closeDialog);
-dialog.addEventListener('click', (event) => {
-  if (event.target === dialog) closeDialog();
+dialog.addEventListener('cancel', (event) => {
+  event.preventDefault();
+  closeDialog();
+});
+dialog.addEventListener('close', () => {
+  detailMedia.querySelectorAll('audio, video').forEach((el) => el.pause());
+  detailMedia.innerHTML = '';
+});
+
+window.addEventListener('popstate', () => {
+  const id = workIdFromHash();
+  if (id) openWork(id, false);
+  else if (dialog.open) dialog.close();
 });
 
 fillForm();
 renderAll();
+if (workIdFromHash()) openWork(workIdFromHash(), false);

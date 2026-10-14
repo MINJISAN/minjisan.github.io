@@ -592,90 +592,94 @@ code {
   font-size: 12px;
 }
 
+/* 작업 상세: 전체 화면 페이지. 미디어는 세로로 쌓이고 정보 칼럼은 스크롤해도 고정 */
 .detail-dialog {
-  width: min(1180px, calc(100vw - 24px));
+  position: fixed;
+  inset: 0;
+  width: 100%;
   max-width: none;
-  height: min(760px, calc(100vh - 24px));
+  height: 100%;
   max-height: none;
-  overflow: hidden;
-  border: 1px solid var(--line);
+  margin: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 0;
   background: var(--bg);
   color: var(--fg);
   padding: 0;
 }
 
 .detail-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.78);
+  background: var(--bg);
+}
+
+body:has(.detail-dialog[open]) {
+  overflow: hidden;
 }
 
 .detail-panel {
-  position: relative;
-  display: flex;
-  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  min-height: 100%;
 }
 
 .close-button {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 2;
   width: 44px;
   height: 44px;
   border-bottom: 1px solid var(--line);
+  background: var(--bg);
   font-size: 24px;
 }
 
 .detail-media {
-  flex: 1;
-  min-width: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  padding: 16px;
   border-right: 1px solid var(--line);
   background: #050505;
 }
 
-.detail-media img,
-.detail-media video,
-.detail-media iframe {
-  border: 0;
-  object-fit: contain;
+.media-item {
+  display: flex;
+  justify-content: center;
 }
 
-.detail-media > img {
-  max-height: 100%;
+.media-item > img,
+.media-item > video {
+  display: block;
   width: auto;
+  height: auto;
   max-width: 100%;
+  max-height: calc(100dvh - 32px);
+  border: 0;
 }
 
-.detail-media > video {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.detail-media > .media-carousel,
-.detail-media > .yt-thumb,
-.detail-media > iframe {
-  align-self: stretch;
+.media-item > iframe {
   width: 100%;
-  height: 100%;
+  height: calc(100dvh - 32px);
+  border: 0;
 }
 
 .audio-stage {
-  place-self: center;
   display: grid;
-  width: min(560px, calc(100% - 32px));
+  width: min(560px, 100%);
   gap: 24px;
+  padding: 48px 0;
 }
-
 
 .audio-stage audio {
   width: 100%;
 }
 
 .empty-media {
-  place-self: center;
+  align-self: center;
+  margin: auto;
   max-width: 420px;
   padding: 16px;
   color: var(--muted);
@@ -689,7 +693,7 @@ code {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 .yt-thumb img {
@@ -715,76 +719,14 @@ code {
   opacity: 1;
 }
 
-.media-carousel {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-stage {
-  flex: 1;
-  min-height: 0;
-  display: grid;
-  place-items: center;
-  grid-template-rows: 100%;
-}
-
-.carousel-stage > img {
-  max-height: 100%;
-  width: auto;
-  max-width: 100%;
-  border: 0;
-}
-
-.carousel-stage > video,
-.carousel-stage > iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  object-fit: contain;
-}
-
-.carousel-stage > .audio-stage {
-  width: min(560px, calc(100% - 32px));
-}
-
-.carousel-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px;
-  border-top: 1px solid var(--soft-line);
-  flex-shrink: 0;
-}
-
-.carousel-btn {
-  background: none;
-  border: 1px solid var(--soft-line);
-  color: var(--fg);
-  cursor: pointer;
-  padding: 2px 14px;
-  font-size: 22px;
-  line-height: 1.4;
-}
-
-.carousel-btn:hover {
-  border-color: var(--fg);
-}
-
-.carousel-counter {
-  min-width: 48px;
-  font-size: 12px;
-  color: var(--muted);
-  text-align: center;
-}
-
 .detail-info {
-  flex: 0 0 340px;
+  position: sticky;
+  top: 0;
+  align-self: start;
   display: flex;
   flex-direction: column;
   gap: 18px;
+  height: 100dvh;
   padding: 48px 16px 16px;
   overflow-y: auto;
 }
@@ -884,18 +826,21 @@ code {
   }
 
   .detail-panel {
-    flex-direction: column;
-    overflow: auto;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .detail-media {
-    flex: 0 0 280px;
+    gap: 8px;
+    padding: 8px;
     border-right: 0;
-    border-bottom: 1px solid var(--line);
   }
 
   .detail-info {
-    flex: 0 0 auto;
+    order: -1;
+    position: static;
+    height: auto;
+    overflow: visible;
+    border-bottom: 1px solid var(--line);
   }
 }
 
